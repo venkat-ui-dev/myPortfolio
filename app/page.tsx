@@ -323,7 +323,7 @@ export default function Portfolio() {
 
           <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 40 }}>
             {[
-              { ic: '💼', title: 'Fiverr', sub: 'Quick projects', href: 'https://www.fiverr.com', cta: 'View Profile →' },
+              { ic: '💼', title: 'Freelancer', sub: 'Quick projects', href: 'https://www.freelancer.in/u/techvenkat', cta: 'View Profile →' },
               { ic: '🚀', title: 'Upwork', sub: 'Long-term contracts', href: 'https://www.upwork.com', cta: 'View Profile →' },
               { ic: '📧', title: 'Email', sub: 'Direct enquiries', href: 'mailto:techvenkats@gmail.com', cta: 'Send Email →' },
               { ic: '🔗', title: 'LinkedIn', sub: 'Professional network', href: 'https://linkedin.com/in/svenkatesh-pro', cta: 'Connect →' },
