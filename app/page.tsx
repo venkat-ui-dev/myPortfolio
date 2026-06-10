@@ -11,7 +11,7 @@ const projects = [
     description: 'Full-stack real-time chat with Claude AI. Multi-conversation support, persistent chat history, and export functionality.',
     tech: ['Next.js', 'TypeScript', 'Supabase', 'Claude API', 'Tailwind'],
     features: ['Google OAuth', 'Chat History', 'Export Chat', 'Real-time UI'],
-    link: 'https://ai-chat-app-seven.vercel.app',
+    link: 'https://ai-chat-app-xi-nine.vercel.app/',
     bg: 'linear-gradient(135deg, #1e1040 0%, #2d1b69 100%)',
   },
   {
@@ -117,6 +117,9 @@ export default function Portfolio() {
         .sec-label { font-size:12px; color:#FF6B35; font-family:'JetBrains Mono',monospace; font-weight:500; text-transform:uppercase; letter-spacing:2px; margin-bottom:12px; }
         .sec-title { font-family:'Space Grotesk',sans-serif; font-size:42px; font-weight:800; margin-bottom:8px; }
         .skill-fill { height:4px; border-radius:2px; background:linear-gradient(90deg,#FF6B35,#FF9A6C); }
+        .typed-container { display:block; position:relative; height:1.3em; }
+        .typed-inner { position:absolute; top:0; left:0; white-space:nowrap; }
+        @media (max-width:560px) { .typed-inner { white-space:normal; font-size:36px; } .typed-container { height:2.6em; } }
         @media (max-width:900px) {
           .hero-grid { grid-template-columns:1fr !important; }
           .terminal-wrap { display:none !important; }
@@ -163,7 +166,9 @@ export default function Portfolio() {
               </div>
               <h1 style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 50, fontWeight: 800, lineHeight: 1.1, letterSpacing: '-1px' }}>
                 I build
-                <span style={{ color: '#FF6B35', display: 'block', minHeight: '1.2em', overflow: 'hidden' }}>{typed}<span className="cursor" /></span>
+                <span className="typed-container" style={{ color: '#FF6B35' }}>
+                  <span className="typed-inner">{typed}<span className="cursor" /></span>
+                </span>
               </h1>
               <p style={{ fontSize: 17, color: '#8899BB', lineHeight: 1.7, margin: '20px 0 10px' }}>
                 Senior Frontend Developer with <strong style={{ color: '#E2E8F3' }}>11+ years</strong> experience.
@@ -323,9 +328,9 @@ export default function Portfolio() {
 
           <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 40 }}>
             {[
-              { ic: '💼', title: 'Fiverr', sub: 'Quick projects', href: 'https://www.fiverr.com', cta: 'View Profile →' },
+              { ic: '💼', title: 'Freelance', sub: 'Quick projects', href: 'https://www.fiverr.com', cta: 'View Profile →' },
               { ic: '🚀', title: 'Upwork', sub: 'Long-term contracts', href: 'https://www.upwork.com', cta: 'View Profile →' },
-              { ic: '📧', title: 'Email', sub: 'Direct enquiries', href: 'mailto:your@email.com', cta: 'Send Email →' },
+              { ic: '📧', title: 'Email', sub: 'Direct enquiries', href: 'mailto:techvenkats@gmail.com', cta: 'Send Email →' },
               { ic: '🔗', title: 'LinkedIn', sub: 'Professional network', href: 'https://linkedin.com/in/svenkatesh-pro', cta: 'Connect →' },
             ].map(c => (
               <a key={c.title} href={c.href} target="_blank" rel="noopener noreferrer" className="ccard">
