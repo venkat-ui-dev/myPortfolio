@@ -11,7 +11,7 @@ const projects = [
     description: 'Full-stack real-time chat with Claude AI. Multi-conversation support, persistent chat history, and export functionality.',
     tech: ['Next.js', 'TypeScript', 'Supabase', 'Claude API', 'Tailwind'],
     features: ['Google OAuth', 'Chat History', 'Export Chat', 'Real-time UI'],
-    link: 'https://ai-chat-app-xi-nine.vercel.app',
+    link: 'https://ai-chat-app-seven.vercel.app',
     bg: 'linear-gradient(135deg, #1e1040 0%, #2d1b69 100%)',
   },
   {
@@ -148,7 +148,7 @@ export default function Portfolio() {
       </nav>
 
       {/* HERO */}
-      <section id="home" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section id="home" style={{ minHeight: '100svh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div className="grid-bg" />
         <div className="glow" style={{ top: -150, left: -100 }} />
         <div className="glow" style={{ bottom: -150, right: -100 }} />
@@ -162,8 +162,8 @@ export default function Portfolio() {
                 <span style={{ fontSize: 13, color: '#FF8F5E', fontWeight: 500 }}>Available for freelance</span>
               </div>
               <h1 style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 50, fontWeight: 800, lineHeight: 1.1, letterSpacing: '-1px' }}>
-                I build<br />
-                <span style={{ color: '#FF6B35' }}>{typed}<span className="cursor" /></span>
+                I build
+                <span style={{ color: '#FF6B35', display: 'block', minHeight: '1.2em', overflow: 'hidden' }}>{typed}<span className="cursor" /></span>
               </h1>
               <p style={{ fontSize: 17, color: '#8899BB', lineHeight: 1.7, margin: '20px 0 10px' }}>
                 Senior Frontend Developer with <strong style={{ color: '#E2E8F3' }}>11+ years</strong> experience.
@@ -323,9 +323,9 @@ export default function Portfolio() {
 
           <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 40 }}>
             {[
-              { ic: '💼', title: 'Freelancer', sub: 'Quick projects', href: 'https://www.freelancer.in/u/techvenkat', cta: 'View Profile →' },
+              { ic: '💼', title: 'Fiverr', sub: 'Quick projects', href: 'https://www.fiverr.com', cta: 'View Profile →' },
               { ic: '🚀', title: 'Upwork', sub: 'Long-term contracts', href: 'https://www.upwork.com', cta: 'View Profile →' },
-              { ic: '📧', title: 'Email', sub: 'Direct enquiries', href: 'mailto:techvenkats@gmail.com', cta: 'Send Email →' },
+              { ic: '📧', title: 'Email', sub: 'Direct enquiries', href: 'mailto:your@email.com', cta: 'Send Email →' },
               { ic: '🔗', title: 'LinkedIn', sub: 'Professional network', href: 'https://linkedin.com/in/svenkatesh-pro', cta: 'Connect →' },
             ].map(c => (
               <a key={c.title} href={c.href} target="_blank" rel="noopener noreferrer" className="ccard">
@@ -354,7 +354,7 @@ export default function Portfolio() {
       {/* FOOTER */}
       <footer style={{ borderTop: '1px solid rgba(255,107,53,0.08)', padding: '24px 32px', textAlign: 'center' }}>
         <p style={{ color: '#3A4560', fontSize: 14 }}>
-          © 2025 <span style={{ color: '#FF6B35' }}>Venkatesh Shanmuganathan</span> · Senior Frontend Developer
+          © 2026 <span style={{ color: '#FF6B35' }}>Venkatesh Shanmuganathan</span> · Senior Frontend Developer
         </p>
       </footer>
     </div>
